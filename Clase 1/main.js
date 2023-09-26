@@ -48,3 +48,4 @@ bloque
 
 let numero = Number(prompt("Ingrese el número"));
 alert(numero + 13);
+
