@@ -77,28 +77,116 @@ nombreFuncion(valor1, valor2, ..., valorn);
 
 // saludar();
 
-function calculadora(num1, num2, operacion) {
-  switch (operacion) {
-    case "+":
-      return num1 + num2;
+// function calculadora(num1, num2, operacion) {
+//   switch (operacion) {
+//     case "+":
+//       return num1 + num2;
 
-    case "-":
-      return num1 - num2;
+//     case "-":
+//       return num1 - num2;
 
-    case "*":
-      return num1 * num2;
+//     case "*":
+//       return num1 * num2;
 
-    case "/":
-      return num1 / num2;
+//     case "/":
+//       return num1 / num2;
 
-    default:
-      return "Operación no identificada";
-  }
-}
+//     default:
+//       return "Operación no identificada";
+//   }
+// }
 
-let numeroUno = Number(prompt("Ingrese el número uno"));
-let numeroDos = Number(prompt("Ingrese el número dos"));
-let operacion = prompt("Ingrese la operación");
+// let numeroUno = Number(prompt("Ingrese el número uno"));
+// let numeroDos = Number(prompt("Ingrese el número dos"));
+// let operacion = prompt("Ingrese la operación");
 
-let resultado = calculadora(numeroUno, numeroDos, operacion);
-alert(`${numeroUno} ${operacion} ${numeroDos} = ${resultado}`);
+// let resultado = calculadora(numeroUno, numeroDos, operacion);
+// alert(`${numeroUno} ${operacion} ${numeroDos} = ${resultado}`);
+
+//SCOPE
+
+// let resultado;
+
+// function sumar(numeroUno, numeroDos) {
+//   resultado = numeroUno + numeroDos;
+// }
+
+// sumar(5, 6);
+// console.log(resultado);
+
+// {
+//   let nombre = "juan";
+// }
+
+// console.log(nombre);
+
+// let nombre = "andres";
+
+// function saludar() {
+//   let nombre = "juan";
+//   console.log(nombre);
+// }
+
+// saludar();
+// console.log(nombre);
+
+// function sumar(num1, num2) {
+//   let resultado = num1 + num2;
+//   return resultado;
+// }
+
+// function restar(num1, num2) {
+//   let resultado = num1 - num2;
+//   return resultado;
+// }
+
+// const suma = function (a, b) {
+//   return a + b;
+// };
+
+// console.log(suma(5, 6));
+
+// const sumar = (a, b) => {
+//   return a + b;
+// };
+
+// function sumar(a, b) {
+//   return a + b;
+// }
+
+//si la arrow function no tiene parámetros entonces se dejan los paréntesis vacíos
+//si la arrow function solo tiene un parámetro se pueden quitar los paréntesis
+//si quitamos las llaves y el return la arrow function hace un return implícito
+
+// const saludar = () => {
+//   return "Hola";
+// };
+
+// console.log(saludar());
+
+// const sumar = x => {
+//   return x + 6;
+// }
+
+// console.log(sumar(9));
+
+// const sumar = (x, y) => x + y;
+
+// let numeroUno = Number(prompt("Ingrese el numero"));
+// let numeroDos = Number(prompt("Ingrese el numero"));
+// console.log(sumar(numeroUno, numeroDos));
+
+const suma = (x, y) => x + y;
+const resta = (x, y) => x - y;
+const iva = (precio) => precio * 0.21;
+
+let precioProducto = Number(prompt("Ingrese el precio del producto"));
+let descuento = Number(prompt("Ingrese el descuento a aplicar"));
+
+// precioProducto + iva - descuento
+let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento);
+// = resta(suma(1000, iva(1000)), 100);
+// = resta(suma(1000, 210), 100);
+// = resta(1210, 100);
+// = 1110
+alert(nuevoPrecio);
