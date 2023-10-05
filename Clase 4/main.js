@@ -176,17 +176,23 @@ nombreFuncion(valor1, valor2, ..., valorn);
 // let numeroDos = Number(prompt("Ingrese el numero"));
 // console.log(sumar(numeroUno, numeroDos));
 
-const suma = (x, y) => x + y;
-const resta = (x, y) => x - y;
-const iva = (precio) => precio * 0.21;
+// const suma = (x, y) => x + y;
+// const resta = (x, y) => x - y;
+// const iva = (precio) => precio * 0.21;
 
-let precioProducto = Number(prompt("Ingrese el precio del producto"));
-let descuento = Number(prompt("Ingrese el descuento a aplicar"));
+// let precioProducto = Number(prompt("Ingrese el precio del producto"));
+// let descuento = Number(prompt("Ingrese el descuento a aplicar"));
 
-// precioProducto + iva - descuento
-let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento);
-// = resta(suma(1000, iva(1000)), 100);
-// = resta(suma(1000, 210), 100);
-// = resta(1210, 100);
-// = 1110
-alert(nuevoPrecio);
+// // precioProducto + iva - descuento
+// let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento);
+// // = resta(suma(1000, iva(1000)), 100);
+// // = resta(suma(1000, 210), 100);
+// // = resta(1210, 100);
+// // = 1110
+// alert(nuevoPrecio);
+
+const saludar = () => {
+  console.log("Hola");
+};
+
+saludar();
