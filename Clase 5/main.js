@@ -182,6 +182,7 @@ class Producto {
 
   vender() {
     this.cantidad -= 1; // this.cantidad = this.cantidad - 1
+    vender()
   }
 }
 
