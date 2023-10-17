@@ -187,3 +187,13 @@ console.log(
     return 0;
   })
 );
+
+// const productos = [
+//   { id: 1, nombre: "camisa", precio: 1000 },
+//   { id: 2, nombre: "gorra", precio: 390 },
+//   { id: 3, nombre: "pantalon", precio: 200 },
+//   { id: 4, nombre: "media", precio: 150 },
+// ];
+
+// const productosFiltrados = productos.filter(item => item.precio > 160);
+// console.log(productosFiltrados);
