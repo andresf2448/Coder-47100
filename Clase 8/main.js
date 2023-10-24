@@ -120,11 +120,11 @@
 
 //operaciones entre fechas
 //Todas las fechas se trabajan en milisegundos
-const navidad = new Date("December 25, 2023");
-const hoy = new Date("October 17, 2023");
+// const navidad = new Date("December 25, 2023");
+// const hoy = new Date("October 17, 2023");
 
-console.log(navidad - hoy);
+// console.log(navidad - hoy);
 
-const milisegundosPorDia = 86400000;
+// const milisegundosPorDia = 86400000;
 
-console.log((navidad - hoy) / milisegundosPorDia);
+// console.log((navidad - hoy) / milisegundosPorDia);
