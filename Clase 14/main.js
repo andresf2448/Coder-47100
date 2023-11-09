@@ -9,6 +9,72 @@ let boton = document.getElementById("boton");
 //   });
 // });
 
+// boton.addEventListener("click", async() => {
+//   const { value: fruit } = await Swal.fire({
+
+//     title: "Select field validation",
+  
+//     input: "select",
+  
+//     inputOptions: {
+  
+//      Fruits: {
+  
+//       apples: "Apples",
+  
+//       bananas: "Bananas",
+  
+//       grapes: "Grapes",
+  
+//       oranges: "Oranges"
+  
+//      },
+  
+//      Vegetables: {
+  
+//       potato: "Potato",
+  
+//       broccoli: "Broccoli",
+  
+//       carrot: "Carrot"
+  
+//      },
+  
+//      icecream: "Ice cream"
+  
+//     },
+  
+//     inputPlaceholder: "Select a fruit",
+  
+//     showCancelButton: true,
+  
+//     inputValidator: (value) => {
+  
+//      return new Promise((resolve) => {
+  
+//       if (value === "oranges") {
+  
+//        resolve();
+  
+//       } else {
+  
+//        resolve("You need to select oranges :)");
+  
+//       }
+  
+//      });
+  
+//     }
+  
+//    });
+  
+//    if (fruit) {
+  
+//     Swal.fire(`You selected: ${fruit}`);
+  
+//    }
+// });
+
 // boton.addEventListener("click", () => {
 //   Swal.fire({
 //     title: "Error!",
@@ -164,14 +230,14 @@ let boton = document.getElementById("boton");
 // const resta = now.minus({ month: 1, days: 1 });
 // console.log(resta.toLocaleString(DateTime.DATETIME_SHORT));
 
-const DateTime = luxon.DateTime;
-const Interval = luxon.Interval;
+// const DateTime = luxon.DateTime;
+// const Interval = luxon.Interval;
 
-const now = DateTime.now();
-const navidad = DateTime.local(2023, 12, 24);
+// const now = DateTime.now();
+// const navidad = DateTime.local(2023, 12, 24);
 
-const i = Interval.fromDateTimes(now, navidad);
+// const i = Interval.fromDateTimes(now, navidad);
 
-console.log(i.length("days"));
-console.log(i.length("hours"));
-console.log(i.length("minutes"));
+// console.log(i.length("days"));
+// console.log(i.length("hours"));
+// console.log(i.length("minutes"));
