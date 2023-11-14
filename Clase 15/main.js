@@ -124,7 +124,8 @@ const BD = [
 const traerProductos = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(BD);
+      // resolve(BD);
+      reject("Intente luego");
     }, 3000);
   });
 };
@@ -144,5 +145,10 @@ traerProductos()
       document.body.append(div);
     });
   })
-  .catch((error) => console.log(error));
+  .catch((error) => {
+    let div = document.createElement("div");
+      div.innerHTML = `Error: ${error}`
+
+      document.body.append(div);
+  });
 /////////////////////////////////////////////////////////////////////////
